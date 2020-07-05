@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Article preview component</title>
+</head>
+
+<body>
+  <main>
+    <article class="article">
+      <div class="article__featured">
+        <img src="images/drawers.jpg" alt="Drawers">
+      </div>
+      <div class="article__body">
+        <span class="article__heading">
+          Shift the overall look and feel by adding these wonderful touches to furniture in your home
+        </span>
+        <span class="article__text">
+          Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've
+          got some simple tips to help you make any room feel complete.
+        </span>
+        <div class="article__details">
+          <div class="article__details--left">
+            <img src="./images/avatar-michelle.jpg" alt="Author Image">
+            <div class="article__author">
+              <h4>Michelle Appleton</h4>
+              <span>28 Jun 2020</span>
+            </div>
+          </div>
+          <div class="article__details--right">
+            <button class="article__share">
+              <img src="./images/icon-share.svg" alt="Share Button">
+            </button>
+          </div>
+        </div>
+        <div class="article__footer hidden">
+          <span class="article__text--footer">Share</span>
+          <ul class="article__socials">
+            <li>
+              <a href="#">
+                <img src="./images/icon-facebook.svg" alt="Facebook">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/icon-twitter.svg" alt="Twitter">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/icon-pinterest.svg" alt="Pinterest">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Lu-Vuong Le</a>.
+    </div>
+  </main>
+
+  <script>
+    let shareBtn = document.querySelector('.article__share');
+    let articleFooter = document.querySelector('.article__footer');
+
+    shareBtn.addEventListener("click", () => {
+      articleFooter.classList.toggle('hidden');
+      shareBtn.style.background = articleFooter.classList.contains('hidden') ? 'hsl(210, 46%, 95%)' : 'hsl(212, 23%, 69%)';
+    });
+  </script>
+</body>
+
+</html>
