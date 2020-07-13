@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+
+<body>
+  <section class="landing">
+    <div class="landing__info">
+      <h1>Learn to code by watching others</h1>
+      <p>
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </p>
+    </div>
+    <div class="landing__form">
+      <button class="btn btn--landing">
+        <span class="form__trial d-block f-bold">
+          Try it free 7 days
+          <span class="f-norm">then</span>
+        </span>
+        <span class="form__trial d-block m-t-sm">$20/mo. thereafter</span>
+      </button>
+      <form method="post" id="trialForm" class="form">
+        <div class="form__wrapper">
+          <div class="form__input-wrapper">
+            <input type="text" class="form__input" name="firstName" id="firstName" placeholder="First Name"
+              autocomplete="off">
+            <img class="error__icon" src="assets/error-red-18dp.svg" alt="Error">
+          </div>
+          <span class="error error__message"></span>
+        </div>
+        <div class="form__wrapper">
+          <div class="form__input-wrapper">
+            <input type="text" class="form__input" name="lastName" id="lastName" placeholder="Last Name"
+              autocomplete="off">
+            <img class="error__icon" src="assets/error-red-18dp.svg" alt="Error">
+          </div>
+          <span class="error error__message"></span>
+        </div>
+        <div class="form__wrapper">
+          <div class="form__input-wrapper">
+            <input type="email" class="form__input" name="email" id="email" placeholder="Email Address"
+              autocomplete="off">
+            <img class="error__icon" src="assets/error-red-18dp.svg" alt="Error">
+          </div>
+          <span class="error error__message"></span>
+        </div>
+        <div class="form__wrapper">
+          <div class="form__input-wrapper">
+            <input type="password" class="form__input" name="password" id="password" placeholder="Password"
+              autocomplete="off">
+            <img class="error__icon" src="assets/error-red-18dp.svg" alt="Error">
+          </div>
+          <span class="error error__message"></span>
+        </div>
+        <button class="btn btn--submit">
+          Claim your free trial
+        </button>
+        <div class="landing__tc">
+          <span>
+            By clicking the button, you are agreeing to our
+            <span class="f-bold c-orange">
+              <a href="#">
+                Terms and Services
+              </a>
+            </span>
+          </span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+
+  <!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Lu-Vuong Le</a>.
+    </p>
+  </footer> -->
+</body>
+
+</html>
