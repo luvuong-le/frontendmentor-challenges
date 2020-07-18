@@ -32,6 +32,7 @@ html, body {
     width: 100%;
     font-size: 16px;
     font-family: Rubik, sans-serif;
+    overflow: hidden;
 }
 
 .section {
@@ -344,4 +345,59 @@ html, body {
 
 .radio input:checked ~ .radio__option {
     background: var(--gradient-violet);
+}
+
+/* Responsiveness */
+@media only screen and (min-width: 770px) {
+    .bg {
+        height: 80%;
+        width: 475px;
+        border-bottom-left-radius: 200px;
+        border-bottom-right-radius: 200px;
+        left: -50px;
+    }
+
+    .bg--transparent {
+        background: var(--pale-violet);
+        opacity: 0.1;
+        left: initial;
+        right: -50px;
+        bottom: 0;
+        border-top-left-radius: 300px;
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .landing__content {
+        flex-direction: row;
+        height: 100%;
+    }
+
+    .landing__text {
+        width: 40%;
+        margin-left: 200px;
+        text-align: left;
+    }
+
+    .phone {
+        width: 260px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .landing__text {
+        width: 30%;
+        margin-left: 350px;
+        text-align: left;
+    }
+
+    .landing__text h1 {
+        font-size: 3em;
+    }
+
+    .landing__text p {
+        font-size: 1.2em;
+    }
+
 }
